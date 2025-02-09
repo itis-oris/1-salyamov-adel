@@ -1,0 +1,99 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Стили для таблицы курсов */
+.course-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивные колонки */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Стили для карточек курсов */
+.course-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid #ddd; /* Тонкая граница */
+}
+
+.course-card h2 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.course-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.course-card p strong {
+    color: #333;
+}
+
+.btn-view {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+    background-color: #45a049;
+}
+
+.course-card:hover {
+    transform: translateY(-5px); /* Подъем карточки при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+}
+
+/* Сообщение об отсутствии курсов */
+.no-courses {
+    text-align: center;
+    color: #777;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+    .course-table {
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки на планшетах */
+    }
+}
+
+@media (max-width: 768px) {
+    .course-table {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки на меньших экранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .course-table {
+        grid-template-columns: repeat(1, 1fr); /* 1 колонка на узких экранах */
+    }
+}

@@ -1,0 +1,3 @@
+2024-12-18 00:41:23,164 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2024-12-18 00:41:23,167 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2024-12-18 00:41:23,168 [main] INFO  com.example.utils.DbListener- Context destroyed
